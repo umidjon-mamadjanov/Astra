@@ -4,48 +4,52 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "astra-repl"
-version = "0.7.0"
+version = "0.1"
 description = "Modern Python REPL with plugins, aliases, sessions and AI support"
 readme = "README.md"
 requires-python = ">=3.10"
 
 authors = [
-    { name = "Umidjon Mamadjanov" }
+{ name = "Umidjon Mamadjanov" }
 ]
 
-license = { text = "MIT" }
+license = "MIT"
 
 keywords = [
-    "python",
-    "repl",
-    "shell",
-    "terminal",
-    "cli",
-    "astra"
+"python",
+"repl",
+"shell",
+"terminal",
+"cli",
+"astra"
 ]
 
 dependencies = [
-    "prompt_toolkit",
-    "rich",
-    "pygments",
-    "requests",
-    "python-dotenv"
+"prompt_toolkit",
+"rich",
+"pygments",
+"requests",
+"python-dotenv"
 ]
 
 [project.urls]
-Homepage = "https://github.com/TechFox-AI/Astra"
-Repository = "https://github.com/TechFox-AI/Astra"
-Issues = "https://github.com/TechFox-AI/Astra/issues"
+Homepage = "https://github.com/umidjon-mamadjanov/Astra"
+Repository = "https://github.com/umidjon-mamadjanov/Astra"
+Issues = "https://github.com/umidjon-mamadjanov/Astra/issues"
 
 [project.scripts]
 astra = "main:main"
 
 [tool.setuptools]
 include-package-data = true
+py-modules = [
+"main",
+"config"
+]
 
 [tool.setuptools.packages.find]
 include = [
-    "ai*",
-    "core*",
-    "plugins*"
+"ai*",
+"core*",
+"plugins*"
 ]
