@@ -7,7 +7,7 @@ Astra REPL is an extensible interactive Python environment designed for develope
 
 ---
 
-#Features
+# Features
 
 Python REPL
 
@@ -26,7 +26,7 @@ Command history
 Session save/load
 
 
-#AI Assistant
+# AI Assistant
 
 Ask programming questions
 
@@ -43,7 +43,7 @@ Save AI responses
 Save generated code
 
 
-#Shell Integration
+# Shell Integration
 
 Directory navigation
 
@@ -56,7 +56,7 @@ File reading
 Terminal utilities
 
 
-#Plugin System
+# Plugin System
 
 Dynamic plugin loading
 
@@ -69,7 +69,7 @@ Plugin reloading
 Plugin autoload support
 
 
-#Developer Tools
+# Developer Tools
 
 Benchmarking
 
@@ -84,7 +84,7 @@ JSON export
 CSV export
 
 
-#Themes
+# Themes
 
 Dark
 
@@ -100,7 +100,7 @@ Neon
 
 ---
 
-#Installation
+# Installation
 
 PyPI
 
@@ -117,7 +117,7 @@ astra --version
 
 ---
 
-#Installation From Source
+# Installation From Source
 
 git clone https://github.com/umidjon-mamadjanov/Astra.git
 
@@ -127,14 +127,14 @@ pip install -r requirements.txt
 
 pip install -e .
 
-#Run:
+Run:
 
 astra
 
 
 ---
 
-#Requirements
+# Requirements
 
 Python 3.10+
 
@@ -146,7 +146,7 @@ Internet connection (for AI features)
 
 ---
 
-#Quick Start
+# Quick Start
 
 Variables
 
@@ -185,7 +185,7 @@ Hello Astra
 
 ---
 
-#Shell Commands
+# Shell Commands
 
 Command	Description
 
@@ -201,7 +201,7 @@ clear	Clear screen
 astrafetch	System information
 
 
-#Examples:
+# Examples:
 
 ls
 
@@ -220,7 +220,7 @@ tree
 
 ---
 
-#AI Commands
+# AI Commands
 
 Ask AI
 
@@ -245,7 +245,7 @@ Generate Code
 
 ---
 
-#AI Response Saving
+# AI Response Saving
 
 Save last AI response:
 
@@ -258,7 +258,7 @@ Save code block:
 
 ---
 
-#AI Models
+# AI Models
 
 List models:
 
@@ -288,7 +288,7 @@ API status
 
 ---
 
-#File Management
+# File Management
 
 Edit File
 
@@ -313,7 +313,7 @@ Install Package
 
 ---
 
-#Search
+# Search
 
 Search project files:
 
@@ -335,7 +335,7 @@ Supported:
 
 ---
 
-#Plugin System
+# Plugin System
 
 Create Plugin
 
@@ -383,7 +383,7 @@ Reload All
 
 ---
 
-Plugin Autoload
+# Plugin Autoload
 
 Add:
 
@@ -400,7 +400,7 @@ List:
 
 ---
 
-Themes
+# Themes
 
 Show themes:
 
@@ -417,7 +417,7 @@ Change theme:
 
 ---
 
-Aliases
+# Aliases
 
 Create alias:
 
@@ -438,7 +438,7 @@ Remove alias:
 
 ---
 
-Environment Commands
+# Environment Commands
 
 Show Objects
 
@@ -475,7 +475,7 @@ History
 
 ---
 
-Memory Inspection
+# Memory Inspection
 
 Process memory:
 
@@ -488,7 +488,7 @@ Object memory:
 
 ---
 
-Benchmarking
+# Benchmarking
 
 %bench sum(range(1000000))
 
@@ -506,7 +506,7 @@ Slowest
 
 ---
 
-System Information
+# System Information
 
 %sys
 
@@ -524,7 +524,7 @@ RAM Free
 
 ---
 
-Sessions
+# Sessions
 
 Save:
 
@@ -537,7 +537,7 @@ Load:
 
 ---
 
-Variable Management
+# Variable Management
 
 Delete:
 
@@ -569,7 +569,7 @@ System variables
 
 ---
 
-JSON Export
+# JSON Export
 
 Print JSON:
 
@@ -582,7 +582,7 @@ Save JSON:
 
 ---
 
-CSV Export
+# CSV Export
 
 Print CSV:
 
@@ -602,7 +602,7 @@ students = [
 
 ---
 
-Inspection
+# Inspection
 
 Quick inspection:
 
@@ -625,7 +625,7 @@ dict??
 
 ---
 
-System Commands
+# System Commands
 
 Configuration:
 
@@ -656,7 +656,7 @@ Backup configuration:
 
 ---
 
-Shortcuts
+# Shortcuts
 
 Quick menu:
 
@@ -673,7 +673,7 @@ exit
 
 ---
 
-Project Structure
+# Project Structure
 
 Astra/
 │
@@ -691,9 +691,9 @@ Astra/
 
 ---
 
-Roadmap
+# Roadmap
 
-v0.8
+v0.2
 
 Better plugin API
 
@@ -704,7 +704,7 @@ More AI providers
 Syntax diagnostics
 
 
-v0.9
+v0.3
 
 Workspace support
 
@@ -713,7 +713,7 @@ Package manager
 Project templates
 
 
-v1.0
+v0.4
 
 Stable public release
 
@@ -727,7 +727,7 @@ Cloud sync
 
 ---
 
-Contributing
+# Contributing
 
 1. Fork repository
 
@@ -748,20 +748,20 @@ Contributing
 
 ---
 
-License
+# License
 
 MIT License
 
 
 ---
 
-Author
+# Author
 
 Umidjon Mamadjanov
 
 
 ---
 
-Version
+# Version
 
 Astra REPL v0.1.0
