@@ -1,0 +1,6 @@
+{
+    "model": "openai/gpt-oss-20b:free",
+    "theme": "hacker",
+    "ai_enabled": true,
+    "autoload_plugins": []
+}
