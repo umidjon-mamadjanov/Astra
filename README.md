@@ -7,45 +7,45 @@ Astra REPL is an extensible interactive Python environment designed for develope
 
 ---
 
-# Features
+## Features
 
-Python REPL
+- Python REPL
 
-Interactive Python execution
+- Interactive Python execution
 
-Multi-line code execution
+- Multi-line code execution
 
-Persistent environment
+- Persistent environment
 
-Variable management
+- Variable management
 
-Function and class support
+- Function and class support
 
-Command history
+- Command history
 
-Session save/load
-
-
-# AI Assistant
-
-Ask programming questions
-
-Explain code
-
-Fix bugs
-
-Review source code
-
-Generate complete programs
-
-Save AI responses
-
-Save generated code
+- Session save/load
 
 
-# Shell Integration
+## AI Assistant
 
-Directory navigation
+- Ask programming questions
+
+- Explain code
+
+- Fix bugs
+
+- Review source code
+
+- Generate complete programs
+
+- Save AI responses
+
+- Save generated code
+
+
+## Shell Integration
+
+- Directory navigation
 
 File management
 
@@ -56,7 +56,7 @@ File reading
 Terminal utilities
 
 
-# Plugin System
+## Plugin System
 
 Dynamic plugin loading
 
@@ -69,7 +69,7 @@ Plugin reloading
 Plugin autoload support
 
 
-# Developer Tools
+## Developer Tools
 
 Benchmarking
 
