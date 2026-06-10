@@ -47,94 +47,104 @@ Astra REPL is an extensible interactive Python environment designed for develope
 
 - Directory navigation
 
-File management
+- File management
 
-Tree view
+- Tree view
 
-File reading
+- File reading
 
-Terminal utilities
+- Terminal utilities
 
 
 ## Plugin System
 
-Dynamic plugin loading
+- Dynamic plugin loading
 
-Plugin creation wizard
+- Plugin creation wizard
 
-Plugin editing
+- Plugin editing
 
-Plugin reloading
+- Plugin reloading
 
-Plugin autoload support
+- Plugin autoload support
 
 
 ## Developer Tools
 
-Benchmarking
+- Benchmarking
 
-Memory inspection
+- Memory inspection
 
-Environment statistics
+- Environment statistics
 
-Object inspection
+- Object inspection
 
-JSON export
+- JSON export
 
-CSV export
+- CSV export
 
 
-# Themes
+## Themes
 
-Dark
+- Dark
 
-Light
+- Light
 
-Matrix
+- Matrix
 
-Hacker
+- Hacker
 
-Neon
+- Neon
 
 
 
 ---
 
-# Installation
+## Installation
 
-PyPI
+ **PyPI**
 
+```bash
 pip install astra-repl
+```
 
-Run
+**Run**
 
+```bash
 astra
+```
 
-Verify Installation
+### Verify Installation
 
+```bash
 astra --version
-
+```
 
 ---
 
-# Installation From Source
+### Installation From Source
 
+```bash
 git clone https://github.com/umidjon-mamadjanov/Astra.git
+
 
 cd Astra
 
 pip install -r requirements.txt
 
 pip install -e .
+```
 
-Run:
+**Run:**
 
+```bash
 astra
+```
 
 
 ---
 
-# Requirements
+## Requirements
 
 Python 3.10+
 
@@ -146,63 +156,70 @@ Internet connection (for AI features)
 
 ---
 
-# Quick Start
+## Quick Start
 
-Variables
+**Variables**
 
-x = 100
+`x = 100`
 
-x
+`x`
 
-Output:
+**Output:**
 
-100
+`100`
 
-Loops
+**Loops**
 
+```
 for i in range(5):
     print(i)
+```
 
-Output:
+**Output:**
 
+```
 0
 1
 2
 3
 4
+```
 
-Functions
+**Functions**
 
+```
 def hello():
     print("Hello Astra")
 
 hello()
+```
 
-Output:
+**Output:**
 
-Hello Astra
+`Hello Astra`
 
 
 ---
 
-# Shell Commands
+## Shell Commands
 
-Command	Description
+### Command	Description
 
-ls	List files
-cd DIR	Change directory
-pwd	Current directory
-cat FILE	Show file
-mkdir DIR	Create directory
-touch FILE	Create file
-rm FILE	Delete file
-tree	Directory tree
-clear	Clear screen
-astrafetch	System information
+- ls	List files
+- cd DIR	Change directory
+- pwd	Current directory
+- cat FILE	Show file
+- mkdir DIR	Create directory
+- touch FILE	Create file
+- rm FILE	Delete file
+- tree	Directory tree
+- clear	Clear screen
+- astrafetch	System information
 
 
-# Examples:
+## Examples:
 
+```
 ls
 
 cd plugins
@@ -216,396 +233,410 @@ mkdir project
 touch main.py
 
 tree
+```
 
 
 ---
 
-# AI Commands
+## AI Commands
 
-Ask AI
+**Ask AI**
 
-/ask Python nima?
+`/ask Python nima?`
 
-Explain Code
+**Explain Code**
 
-/explain print("Hello")
+`/explain print("Hello")`
 
-Fix Code
+**Fix Code**
 
-/fix pritn("Hello")
+`/fix pritn("Hello")`
 
-Review Code
+**Review Code**
 
-/review print("Hello")
+`/review print("Hello")`
 
-Generate Code
+**Generate Code**
 
-/generate calculator in python
-
-
----
-
-# AI Response Saving
-
-Save last AI response:
-
-/save answer.txt
-
-Save code block:
-
-/savecode app.py
+`/generate calculator in python`
 
 
 ---
 
-# AI Models
+## AI Response Saving
 
-List models:
+**Save last AI response:**
 
-/models
+`/save answer.txt`
 
-Current model:
+**Save code block:**
 
-/model
+`/savecode app.py`
 
-Change model:
 
-/use 1
+---
 
-AI status:
+## AI Models
 
-/ai-status
+**List models:**
 
-Shows:
+`/models`
 
-Provider
+**Current model:**
 
-Current model
+`/model`
 
-API status
+**Change model:**
+
+`/use 1`
+
+**AI status:**
+
+`/ai-status`
+
+**Shows:**
+
+- Provider
+
+- Current model
+
+- API status
 
 
 
 ---
 
-# File Management
+## File Management
 
-Edit File
+**Edit File**
 
-/edit app.py
+`/edit app.py`
 
-Finish with:
+**Finish with:**
 
-END
+`END`
 
-View File
+**View File**
 
-/view app.py
+`/view app.py`
 
-Run File
+**Run File**
 
-/run app.py
+`/run app.py`
 
-Install Package
+**Install Package**
 
-/install requests
+`/install requests`
 
 
 ---
 
-# Search
+## Search
 
-Search project files:
+**Search project files:**
 
+```
 /find TODO
 
 /find AstraREPL
+```
 
-Supported:
+**Supported:**
 
-.py
+- .py
 
-.txt
+- .txt
 
-.md
+- .md
 
-.json
+- .json
 
 
 
 ---
 
-# Plugin System
+## Plugin System
 
-Create Plugin
+**Create Plugin**
 
-/plugin-create hello
+`/plugin-create hello`
 
-Generated template:
+**Generated template:**
 
+```
 def run(args=""):
     print(args if args else "hello plugin")
+```
 
-Show Plugin
+**Show Plugin**
 
-/plugin-show hello
+`/plugin-show hello`
 
-Edit Plugin
+**Edit Plugin**
 
-/plugin-edit hello
+`/plugin-edit hello`
 
-Finish editing:
+**Finish editing:**
 
-END
+`END`
 
-Load Plugin
+**Load Plugin**
 
-/load hello
+``/load hello``
 
-Execute Plugin
+**Execute Plugin**
 
+```
 /exec hello
 
 /exec hello test
+```
 
-Unload Plugin
+**Unload Plugin**
 
-/unload hello
+`/unload hello`
 
-Reload Plugin
+**Reload Plugin**
 
-/reload hello
+`/reload hello`
 
-Reload All
+**Reload All**
 
-/reload-all
-
-
----
-
-# Plugin Autoload
-
-Add:
-
-/autoload hello
-
-Remove:
-
-/unautoload hello
-
-List:
-
-/autoload-list
+`/reload-all`
 
 
 ---
 
-# Themes
+## Plugin Autoload
 
-Show themes:
+**Add:**
 
-/theme list
+`/autoload hello`
 
-Change theme:
+**Remove:**
 
+`/unautoload hello`
+
+**List:**
+
+`/autoload-list`
+
+
+---
+
+## Themes
+
+**Show themes:**
+
+`/theme list`
+
+**Change theme:**
+
+```
 /theme hacker
 
 /theme matrix
 
 /theme neon
+```
 
 
 ---
 
-# Aliases
+## Aliases
 
-Create alias:
+**Create alias:**
 
-/alias ll ls
+`/alias ll ls`
 
-Usage:
+**Usage:**
 
-ll
+`ll`
 
-List aliases:
+**List aliases:**
 
-/aliases
+`/aliases`
 
-Remove alias:
+**Remove alias:**
 
-/unalias ll
+`/unalias ll`
 
 
 ---
 
-# Environment Commands
+## Environment Commands
 
-Show Objects
+**Show Objects**
 
-%who
+`%who`
 
-Detailed Objects
+**Detailed Objects**
 
-%whos
+`%whos`
 
-Variables Only
+**Variables Only**
 
-%vars
+`%vars`
 
-Environment Statistics
+**Environment Statistics**
 
-%env
+`%env`
 
-Reset Environment
+**Reset Environment**
 
-%reset
+`%reset`
 
-Measure Time
+**Measure Time**
 
-%time sum(range(100000))
+`%time sum(range(100000))`
 
-History
+**History**
 
+```
 %history
 
 %history 10
 
 %history clear
+```
 
 
 ---
 
-# Memory Inspection
+## Memory Inspection
 
-Process memory:
+**Process memory:**
 
-%mem
+`%mem`
 
-Object memory:
+**Object memory:**
 
-%mem data
-
-
----
-
-# Benchmarking
-
-%bench sum(range(1000000))
-
-Results:
-
-Runs
-
-Average
-
-Fastest
-
-Slowest
-
+`%mem data`
 
 
 ---
 
-# System Information
+## Benchmarking
 
-%sys
+`%bench sum(range(1000000))`
 
-Shows:
+**Results:**
 
-CPU Cores
+- Runs
 
-RAM Total
+- Average
 
-RAM Used
+- Fastest
 
-RAM Free
+- Slowest
 
 
 
 ---
 
-# Sessions
+## System Information
 
-Save:
+`%sys`
 
-%save-session work.astra
+**Shows:**
 
-Load:
+- CPU Cores
 
-%load-session work.astra
+- RAM Total
 
+- RAM Used
 
----
-
-# Variable Management
-
-Delete:
-
-%del x
-
-Rename:
-
-%rename x number
-
-Copy:
-
-%copy data backup
-
-Clear variables:
-
-%clear-vars
-
-Protected objects:
-
-Modules
-
-Functions
-
-Classes
-
-System variables
+- RAM Free
 
 
 
 ---
 
-# JSON Export
+## Sessions
 
-Print JSON:
+**Save:**
 
-%json user
+`%save-session work.astra`
 
-Save JSON:
+**Load:**
 
-%json user user.json
+`%load-session work.astra`
+
+
+---
+
+## Variable Management
+
+**Delete:**
+
+`%del x`
+
+**Rename:**
+
+`%rename x number`
+
+**Copy:**
+
+`%copy data backup`
+
+**Clear variables:**
+
+`%clear-vars`
+
+**Protected objects:**
+
+- Modules
+
+- Functions
+
+- Classes
+
+- System variables
+
+
+
+---
+
+## JSON Export
+
+**Print JSON:**
+
+`%json user`
+
+**Save JSON:**
+
+`%json user user.json`
 
 
 ---
 
 # CSV Export
 
-Print CSV:
+**Print CSV:**
 
-%csv students
+`%csv students`
 
-Save CSV:
+**Save CSV:**
 
-%csv students students.csv
+`%csv students students.csv`
 
-Example:
+**Example:**
 
+```
 students = [
     ["Name", "Age"],
     ["Umidjon", 15]
 ]
+```
 
 
 ---
 
-# Inspection
+## Inspection
 
-Quick inspection:
+**Quick inspection:**
 
+```
 str?
 
 list?
@@ -613,53 +644,59 @@ list?
 dict?
 
 x?
+```
 
-Full inspection:
+**Full inspection:**
 
+```
 str??
 
 list??
 
 dict??
+```
 
 
 ---
 
-# System Commands
+## System Commands
 
-Configuration:
+**Configuration:**
 
-/config
+`/config`
 
-Statistics:
+**Statistics:**
 
-/stats
+`/stats`
 
-Locate command:
+**Locate command:**
 
+```
 /which ls
 
 /which hello
+```
 
-Version:
+**Version:**
 
-/version
+`/version`
 
-System info:
+**System info:**
 
-/sysinfo
+`/sysinfo`
 
-Backup configuration:
+**Backup configuration:**
 
-/backup-config
+`/backup-config`
 
 
 ---
 
-# Shortcuts
+## Shortcuts
 
-Quick menu:
+**Quick menu:**
 
+```
 //
 
 Help:
@@ -669,12 +706,14 @@ Help:
 Exit:
 
 exit
+```
 
 
 ---
 
-# Project Structure
+## Project Structure
 
+```
 Astra/
 │
 ├── ai/
@@ -687,47 +726,48 @@ Astra/
 ├── requirements.txt
 ├── pyproject.toml
 └── README.md
+```
 
 
 ---
 
-# Roadmap
+## Roadmap
 
-v0.2
+**v0.2**
 
-Better plugin API
+- Better plugin API
 
-Auto-completion improvements
+- Auto-completion improvements
 
-More AI providers
+- More AI providers
 
-Syntax diagnostics
-
-
-v0.3
-
-Workspace support
-
-Package manager
-
-Project templates
+- Syntax diagnostics
 
 
-v0.4
+**v0.3**
 
-Stable public release
+- Workspace support
 
-Full documentation
+- Package manager
 
-Plugin marketplace
+- Project templates
 
-Cloud sync
+
+**v0.4**
+
+- Stable public release
+
+- Full documentation
+
+- Plugin marketplace
+
+- Cloud sync
 
 
 
 ---
 
-# Contributing
+## Contributing
 
 1. Fork repository
 
@@ -750,18 +790,18 @@ Cloud sync
 
 # License
 
-MIT License
+**MIT License**
 
 
 ---
 
 # Author
 
-Umidjon Mamadjanov
+**Umidjon Mamadjanov**
 
 
 ---
 
 # Version
 
-Astra REPL v0.1.0
+**Astra REPL v0.1.0**
