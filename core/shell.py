@@ -236,7 +236,7 @@ r"""
         )
 
         print(
-            "Version  : Astra v0.6"
+            "Version  : Astra v0.1"
         )
         
         print(
