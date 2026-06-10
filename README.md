@@ -1,4 +1,4 @@
-#Astra REPL
+# Astra REPL
 
 Modern Python REPL with AI support, shell commands, plugins, aliases, sessions, inspection tools, benchmarking and developer utilities.
 
