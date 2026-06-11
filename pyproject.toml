@@ -25,11 +25,11 @@ keywords = [
 ]
 
 dependencies = [
-"prompt_toolkit",
-"rich",
-"pygments",
-"requests",
-"python-dotenv"
+    "prompt_toolkit",
+    "rich",
+    "pygments",
+    "requests",
+    "python-dotenv"
 ]
 
 [project.urls]
