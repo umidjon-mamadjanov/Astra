@@ -115,12 +115,6 @@ pip install astra-repl
 astra
 ```
 
-### Verify Installation
-
-```bash
-astra --version
-```
-
 ---
 
 ### Installation From Source
