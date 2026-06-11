@@ -63,7 +63,7 @@ r"""
 
     print(
         color +
-        "Version  : Astra v0.1"
+        "Version  : Astra v0.1.2"
         + reset
     )
     
