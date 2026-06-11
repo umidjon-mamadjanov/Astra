@@ -1618,7 +1618,7 @@ def version_command():
 f"""
 Astra REPL
 
-Version  : v0.5
+Version  : v0.1.2
 Python   : {sys.version.split()[0]}
 Platform : {platform.system()}
 """
