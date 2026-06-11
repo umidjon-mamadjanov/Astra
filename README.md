@@ -105,6 +105,7 @@ Astra REPL is an extensible interactive Python environment designed for develope
  **PyPI**
 
 ```bash
+pkg install python-psutil
 pip install astra-repl
 ```
 
