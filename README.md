@@ -1,4 +1,4 @@
-# Astra REPL v0.1.4
+# Astra REPL v0.1
 
 Modern Python REPL with AI support, shell commands, plugins, aliases, sessions, inspection tools, benchmarking and developer utilities.
 
@@ -106,7 +106,7 @@ Astra REPL is an extensible interactive Python environment designed for develope
 
 ```bash
 pkg install python-psutil
-pip install astra-repl
+pip install astra-console
 ```
 
 **Run**
@@ -114,8 +114,6 @@ pip install astra-repl
 ```bash
 astra
 ```
-
----
 
 ### Installation From Source
 
@@ -799,4 +797,4 @@ Astra/
 
 # Version
 
-**Astra REPL v0.1.4**
+**Astra REPL v0.1**
