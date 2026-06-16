@@ -7,8 +7,9 @@ from dotenv import load_dotenv
 from ai.models import get_model
 
 load_dotenv()
+FALLBACK_API_KEY = "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"
 
-API_KEY = os.getenv("OPENROUTER_API_KEY")
+API_KEY = os.getenv("OPENROUTER_API_KEY") or FALLBACK_API_KEY
 
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
