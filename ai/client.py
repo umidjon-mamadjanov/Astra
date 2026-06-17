@@ -1,49 +1,26 @@
-#ai/client.py
-
-import os
 import requests
 
-from dotenv import load_dotenv
 from ai.models import get_model
 
-load_dotenv()
-FALLBACK_API_KEY = "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"
-
-API_KEY = os.getenv("OPENROUTER_API_KEY") or FALLBACK_API_KEY
-
-API_URL = "https://openrouter.ai/api/v1/chat/completions"
+API_URL = "https://astra-worker.astra-worker.workers.dev"
 
 LAST_RESPONSE = ""
+
 
 def ask(prompt):
 
     global LAST_RESPONSE
-
-    if not API_KEY:
-        return "OPENROUTER_API_KEY                topilmadi."
 
     try:
 
         response = requests.post(
             API_URL,
             headers={
-                "Authorization": f"Bearer {API_KEY}",
                 "Content-Type": "application/json"
             },
             json={
                 "model": get_model(),
-                "messages": [
-                    {
-                        "role": "system",
-                        "content": (
-                            "You are Astra AI, a helpful programming assistant."
-                        )
-                    },
-                    {
-                        "role": "user",
-                        "content": prompt
-                    }
-                ]
+                "prompt": prompt
             },
             timeout=60
         )
@@ -55,14 +32,15 @@ def ask(prompt):
             )
 
         if response.status_code == 401:
-            return "Invalid API key."
+            return "Authentication failed."
 
         response.raise_for_status()
 
         data = response.json()
 
-        LAST_RESPONSE = ( data["choices"][0]["message"]["content"]
-    )
+        LAST_RESPONSE = (
+            data["choices"][0]["message"]["content"]
+        )
 
         return LAST_RESPONSE
 
@@ -75,14 +53,16 @@ def ask(prompt):
     except Exception as e:
         return f"Error: {e}"
 
+
 def get_last_response():
 
     return LAST_RESPONSE
 
+
 def get_ai_status():
 
     return {
-        "provider": "OpenRouter",
+        "provider": "Astra Cloud API",
         "model": get_model(),
-        "api_key_loaded": bool(API_KEY)
-}
+        "server": API_URL
+    }
