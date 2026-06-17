@@ -1,4 +1,4 @@
-# Astra REPL v0.1
+# Astra REPL v0.1.1
 
 Modern Python REPL with AI support, shell commands, plugins, aliases, sessions, inspection tools, benchmarking and developer utilities.
 
@@ -797,4 +797,4 @@ Astra/
 
 # Version
 
-**Astra REPL v0.1**
+**Astra REPL v0.1.1**
