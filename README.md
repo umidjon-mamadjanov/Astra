@@ -9,7 +9,24 @@ Modern Python REPL with AI support, shell commands, plugins, aliases, sessions, 
 
 Astra REPL is an extensible interactive Python environment designed for developers, students, researchers and power users. It combines a Python interpreter, shell utilities, project tools, plugin architecture and AI-assisted development in a single terminal application.
 
+---
 
+## Table of Contents
+
+- Features
+- Installation
+- Requirements
+- Quick Start
+- Shell Commands
+- AI Commands
+- Plugin System
+- Themes
+- Aliases
+- Sessions
+- Roadmap
+- Contributing
+- License
+  
 ---
 
 ## Features
@@ -803,3 +820,19 @@ Astra/
 # Version
 
 **Astra REPL v0.1.1**
+
+
+---
+
+## Astra Project
+
+Built for developers, students, researchers, and power users.
+
+- Documentation
+- Wiki
+- Issues
+- Discussions
+
+© 2026 Astra Project
+
+Released under the MIT License.
